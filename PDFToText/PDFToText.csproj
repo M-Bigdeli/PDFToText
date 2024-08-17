@@ -36,6 +36,9 @@
         <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
           <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
         </Reference>
+        <Reference Include="Bytescout.PDFRenderer, Version=13.4.1.4800, Culture=neutral, PublicKeyToken=f7dd1bd9d40a50eb, processorArchitecture=MSIL">
+          <HintPath>..\packages\Bytescout.PDFRenderer.13.4.1.4800\lib\net40\Bytescout.PDFRenderer.dll</HintPath>
+        </Reference>
         <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
           <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
         </Reference>
@@ -52,6 +55,12 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="ExportText.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="ExportText.Designer.cs">
+          <DependentUpon>ExportText.cs</DependentUpon>
+        </Compile>
         <Compile Include="OpenPFD.cs">
             <SubType>Form</SubType>
         </Compile>
@@ -60,6 +69,9 @@
         </Compile>
         <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
+        <EmbeddedResource Include="ExportText.resx">
+          <DependentUpon>ExportText.cs</DependentUpon>
+        </EmbeddedResource>
         <EmbeddedResource Include="OpenPFD.resx">
           <DependentUpon>OpenPFD.cs</DependentUpon>
         </EmbeddedResource>

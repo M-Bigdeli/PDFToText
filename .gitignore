@@ -92,4 +92,4 @@ fabric.properties
 # End of https://www.toptal.com/developers/gitignore/api/rider,dotnetcore
 
 .idea/.idea.NeurometerGame/.idea/.gitignore
-./packages/
+packages/
